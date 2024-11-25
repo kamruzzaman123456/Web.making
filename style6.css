@@ -1,28 +1,26 @@
 body{
     font-family:'Poppins';
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
+
+    
 }
-nav{
+nav {
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1440px;
-    max-height: 576px;
-
+    justify-content: space-around;       
 }
 nav>ul{
     display: flex;
     align-items: center;
- 
+    justify-content: space-between;
 }
 
  nav li{
     list-style: none;
     margin-right: 30px;
     margin-top:30px ;
-
+    
 }
 nav a{
     text-decoration: none;
@@ -51,13 +49,21 @@ nav a{
 
 b{
     margin-top:30px ;
-    margin-left:-500px ;
+    margin-left:0px ;
     color:  #56548C;
-    max-width:71px;
     Width:400px;
-    min-height:29px;
 }
-
+/* MEDIA QUIRE*/
+@media screen  and (max-width: 740px){
+    nav>ul{
+        flex-wrap: wrap;
+    }
+  .main-contenert{
+    flex-direction: column;
+    height: auto;
+    width: auto ;
+  }  
+}
 /*bannar contant related style*/
 .same-style{
     font-size: 11px;
@@ -89,8 +95,6 @@ h2{
 /* header reiated style */
 header{
   background-color: #F0FFF0;
-  max-width: 1440px;
-  max-height: 576px;
   height: 50%;
   margin-bottom: 10px;
 }
@@ -115,10 +119,9 @@ main section{
 }
  .main-contenert{
     display: flex;
-    justify-content: space-around;
-   
-    
+    justify-content: space-around;  
  }
+ 
 .main-img{
     width: 66px;
     height: 85px;
@@ -256,9 +259,7 @@ main section{
 }
 
 /*footer related style*/
-footer{
-    max-width: 1440px;
-    max-height:600px;
+footer{ 
     margin-top: 68px;
     background-color: #282531;
     height:400px ;
